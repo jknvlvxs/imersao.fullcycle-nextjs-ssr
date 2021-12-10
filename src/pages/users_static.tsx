@@ -1,20 +1,42 @@
 import axios from "axios"
 import { GetStaticProps, NextPage } from "next";
+import Router from "next/router";
+import { useEffect, useState } from "react";
+import useSWR from "swr";
 
 interface User {
     name: string;
     id: number;
 }
 
-interface UserPageProps {
-    users: User[];
+const fetcher = (url: string) => {
+    return axios.get(url).then(res => res.data);
 }
 
-const UsersPage: NextPage<UserPageProps> = (props) => {
-    const {users} = props;
+const UsersPage: NextPage = (props) => {
+    const [users, setUsers] = useState<User[]>([]);
+
+    const { data, error } = useSWR("http://localhost:3000/api/users/list", fetcher, {
+        fallbackData: users,
+        refreshInterval: 5
+    });
+
+    useEffect(() => {
+        if(!data) return;
+
+        setUsers(data);
+    }, [data]);
+
+    useEffect(() => {
+        if(!error) return;
+
+        if(error.response.status === 401){
+            Router.push('/login');
+        }
+    }, [error]);
 
     return (
-        <div>
+        data && <div>
             <ul>
                 {users.map((user) => (
                     <li key={user.id}>{user.name}</li> 
@@ -27,11 +49,8 @@ const UsersPage: NextPage<UserPageProps> = (props) => {
 export default UsersPage;
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const {data} = await axios.get('https://jsonplaceholder.typicode.com/users')
-
     return {
         props: {
-            users: data
         }
     }
 }
