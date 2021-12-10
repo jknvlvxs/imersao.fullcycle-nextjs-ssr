@@ -14,10 +14,6 @@
 
 [Next.js](https://nextjs.org) application starter repository using the guide ['Server Side Rendering com Next.js'](https://www.youtube.com/watch?v=T9IAlagTcJk) and ['Usando API Routes do Next.js para integração com outras API'](https://www.youtube.com/watch?v=mhnoux6J2g0) provided from [Full Cycle on Youtube](https://www.youtube.com/channel/UCMUoZehUZBhLb8XaTc8TQrA).
 
-  
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
