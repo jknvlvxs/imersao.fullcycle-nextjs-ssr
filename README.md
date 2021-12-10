@@ -3,7 +3,7 @@
 </p>
 
 <p  align="center">
-<a  href="https://nextjs.org"  target="blank"><img  src="https://seeklogo.com/vector-logo/321806/next-js"  width="180"  alt="Nextjs Logo"  /></a>
+<a  href="https://nextjs.org"  target="blank"><img  src="https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png"  width="180"  alt="Nextjs Logo"  /></a>
 </p>
 
 # Criando aplicações escaláveis com Go
