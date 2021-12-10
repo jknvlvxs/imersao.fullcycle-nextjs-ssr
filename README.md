@@ -1,3 +1,21 @@
+<p  align="center">
+<a  href="https://www.instagram.com/devfullcycle/"  target="blank"><img  src="https://fullcycle.com.br/wp-content/themes/fullcycle-blog/application/img/logo-fullcycle.png"/></a>
+</p>
+
+<p  align="center">
+<a  href="https://nextjs.org"  target="blank"><img  src="https://seeklogo.com/vector-logo/321806/next-js"  width="180"  alt="Nextjs Logo"  /></a>
+</p>
+
+# Criando aplicações escaláveis com Go
+
+## Description
+
+  
+
+[Next.js](https://nextjs.org) application starter repository using the guide ['Server Side Rendering com Next.js'](https://www.youtube.com/watch?v=T9IAlagTcJk) and ['Usando API Routes do Next.js para integração com outras API'](https://www.youtube.com/watch?v=mhnoux6J2g0) provided from [Full Cycle on Youtube](https://www.youtube.com/channel/UCMUoZehUZBhLb8XaTc8TQrA).
+
+  
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
