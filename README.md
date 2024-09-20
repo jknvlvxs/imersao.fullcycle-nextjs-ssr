@@ -1,8 +1,4 @@
 <p  align="center">
-<a  href="https://www.instagram.com/devfullcycle/"  target="blank"><img  src="https://fullcycle.com.br/wp-content/themes/fullcycle-blog/application/img/logo-fullcycle.png"/></a>
-</p>
-
-<p  align="center">
 <a  href="https://nextjs.org"  target="blank"><img  src="https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png"  width="180"  alt="Nextjs Logo"  /></a>
 </p>
 
